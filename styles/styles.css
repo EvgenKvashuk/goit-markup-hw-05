@@ -760,3 +760,7 @@ footer {
 }
 
 
+.close-modal:hover,
+.close-modal:focus {
+    fill: var(--accent);
+}
