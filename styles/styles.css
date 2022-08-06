@@ -96,7 +96,7 @@ body {
     color: var(--primary-text-color);
 
     position: relative;
-    
+
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -567,6 +567,7 @@ footer {
     fill: #AFB1B8;
     width: 20px;
     height: 20px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .social-icon {
@@ -626,12 +627,71 @@ footer {
 
 /* ====================== hw5 ======================= */
 
+
+.services-item-wraper {
+    position: relative;
+    overflow: hidden;
+}
+
+.services-item-wraper p {
+
+}
+
+.services-item-wraper .overlay {
+    position: absolute;
+
+    width: 100%;
+    height: 70px;
+    padding: 27px 0;
+
+    left: 0;
+    bottom: 0;
+
+    overflow: auto;
+    transform: translate(0, 100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-color: rgba(47, 48, 58, 0.8);;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+
+.services-item-wraper:hover .overlay,
+.services-item-wraper:focus .overlay {
+    transform: translate(0, 0);
+
+}
+
+.services-link {
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.services-link:hover .overlay,
+.services-link:focus .overlay {
+    transform: translate(0, 0);
+
+}
+
+
+
+
+
 .exampl-wraper-img {
     position: relative;
     overflow: hidden;
 }
 
-.overlay {
+.exampl-wraper-img .overlay {
     position: absolute;
 
     width: 100%;
@@ -653,13 +713,14 @@ footer {
     background-color: rgba(33, 150, 243, 0.9);
 }
 
+
 .exampl-link {
     display: block;
-    transition: box-shadow  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.exampl-link:hover, 
+.exampl-link:hover,
 .exampl-link:focus {
     box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
 }
@@ -667,7 +728,7 @@ footer {
 .exampl-link:hover .overlay,
 .exampl-link:focus .overlay {
     transform: translate(0, 0);
-    
+
 }
 
 
@@ -684,6 +745,9 @@ footer {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -758,6 +822,7 @@ footer {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -765,4 +830,3 @@ footer {
 .close-modal:focus {
     fill: var(--accent);
 }
-
