@@ -103,25 +103,24 @@
                 <h2 class="section-titel">Чем мы занимаемся</h2>
                 <ul class="list services-list">
                     <li class="services-item">
-                            <div class="services-item-wraper">
-                                <img src="./images/what_we_do/one.jpg" lang="uk" alt="Розробляемо" width="370"
-                                    height="294">
-                                <p class="overlay">Десктопні додатки</p>
-                            </div>
+                        <div class="services-item-wraper">
+                            <img src="./images/what_we_do/one.jpg" lang="uk" alt="Розробляемо" width="370" height="294">
+                            <p class="overlay">Десктопні додатки</p>
+                        </div>
                     </li>
                     <li class="services-item">
-                            <div class="services-item-wraper">
-                                <img src="./images/what_we_do/two.png" lang="uk" alt="Розробляемо дизайн" width="370"
-                                    height="294">
-                                <p class="overlay">Мобільні додатки</p>
-                            </div>
+                        <div class="services-item-wraper">
+                            <img src="./images/what_we_do/two.png" lang="uk" alt="Розробляемо дизайн" width="370"
+                                height="294">
+                            <p class="overlay">Мобільні додатки</p>
+                        </div>
                     </li>
                     <li class="services-item">
-                            <div class="services-item-wraper">
-                                <img src="./images/what_we_do/treу.jpg" lang="uk" alt="Оптимізуемо" width="370"
-                                    height="294">
-                                <p class="overlay">Дизайнерські рішення</p>
-                            </div>
+                        <div class="services-item-wraper">
+                            <img src="./images/what_we_do/treу.jpg" lang="uk" alt="Оптимізуемо" width="370"
+                                height="294">
+                            <p class="overlay">Дизайнерські рішення</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -378,13 +377,27 @@
                     </li>
                     <li class="social-item">
                         <a href="https://ua.linkedin.com/" class="social-link">
-                            <svg width="20px" higth="20px" class="social-icon">
+                            <svg width="20px" height="20px" class="social-icon">
                                 <use href="./images/sprite.svg#linkedin "></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>
+            <div class="footer-form-wrapper">
+                <h2 class="footer-form-titel">Залиште свої дані, ми вам передзвонимо</h2>
+                <form class="footer-form">
+                    <label class="footer-form-field">
+                        <input type="text" placeholder="E-mail" name="user_name" class="footer-form-input" required>
+                    </label>
+                    <button class="footer-form-field-button">Підписатися
+                        <svg width="24px" higth="24px" class="form-button-icon">
+                            <use href="./images/sprite.svg#icon_send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
         </div>
 
 
@@ -401,22 +414,26 @@
                 <p class="form-titel">Залиште свої дані, ми вам передзвонимо</p>
                 <label class="modal-form-field">
                     <span class="modalform-label-name">Ім'я</span>
-                    <input type="text" class="modal-form-input">
+                    <input type="text" name="user_name" class="modal-form-input" required>
                 </label>
                 <label class="modal-form-field">
                     <span class="modalform-label-name">Телефон</span>
-                    <input type="text" class="modal-form-input">
+                    <input type="tel" name="user_pnone_number" class="modal-form-input" required>
                 </label>
                 <label class="modal-form-field">
                     <span class="modalform-label-name">Пошта</span>
-                    <input type="text" class="modal-form-input">
+                    <input type="mai" name="user_emaill" class="modal-form-input" required>
                 </label>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Введіть текст">
-            </textarea>
-                <input id="police" type="text" class="modal-chek">
+                <label class="modal-form-field">
+                    <span class="modalform-label-name">Коментар</span>
+                    <textarea name="user_message" placeholder="Введіть текст"
+                        class="modal-form-massge"></textarea></label>
+                </textarea>
+                <input id="police" type="checkbox" name="user-police" class="modal-chek">
                 <label for="" class="modal-chek-desk">Погоджуюся з розсилкою та приймаю <a href="#">Умови
-                        договору</a></label>
-                <button></button>
+                        договору</a>
+                </label>
+                <button class="modal-button button primary">Відправити</button>
             </form>
         </div>
     </div>
